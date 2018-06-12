@@ -1,0 +1,25 @@
+#header {
+	background-image: var(--coffee-background-h);
+	background-size: cover;
+	background-attachment: fixed;
+	height: 100vh;
+	color: var(--alt-color);
+}
+
+@media (orientation: landscape and max-width: 640px), (orientation: portrait and max-height: 480px) {
+	#header {
+		background-image: var(--coffee-background-l);
+	}
+}
+
+@media (orientation: landscape and max-width: 320px), (orientation: portrait and max-height: 240px) {
+	#header {
+		background-image: var(--coffee-background-l);
+	}
+}
+
+@media (orientation: portrait and max-width: 160px), (orientation: portrait and max-height: 120px) {
+	#header {
+		background-image: var(--coffee-background-s);
+	}
+}

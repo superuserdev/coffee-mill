@@ -1,0 +1,24 @@
+:root {
+	--main-font: Roboto;
+	--title-font: Alice;
+
+	--default-color: #333;
+	--primary-color: #fafafa;
+	--alt-color: #fefefe;
+	--accent-color: #AA0000;
+	--accent-color-2: #7F0000;
+
+	--button-border: none;
+	--button-background: var(--accent-color);
+	--button-color: var(--alt-color);
+	--button-active-background: var(--accent-color-2);
+	--button-active-color: var(--button-color);
+	--button-disabled-background: var(--button-active-background);
+	--button-disabled-color: var(--button-active-color);
+
+	--coffee-background-f: url("https://i.imgur.com/EmXgFvx.jpg");
+	--coffee-background-h: url("https://i.imgur.com/EmXgFvxh.jpg");
+	--coffee-background-l: url("https://i.imgur.com/EmXgFvxl.jpg");
+	--coffee-background-m: url("https://i.imgur.com/EmXgFvxm.jpg");
+	--coffee-background-s: url("https://i.imgur.com/EmXgFvxt.jpg");
+}

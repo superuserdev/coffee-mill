@@ -1,0 +1,23 @@
+'@type': Organization
+'@context': 'http://schema.org'
+name: The Coffee Mill Cafe
+telephone: '+1-760-379-0002'
+url: 'https://www.thecoffeecafe.com/'
+address:
+  '@type': PostalAddress
+  streetAddress: 36 Highway 155
+  addressLocality: Lake Isabella
+  addressRegion: California
+  postalCode: 93240
+  url: 'https://goo.gl/maps/3xBEWx4KB132'
+# email:
+sameAs:
+#  twitter:
+#  linkedin:
+  facebook: The-Coffee-Mill-Cafe-104517223240056
+logo:
+  '@type': ImageObject
+  url: 'https://kernvalley.us/img/icon-512.png'
+  width: 512
+  height: 512
+  encodingFormat: png
