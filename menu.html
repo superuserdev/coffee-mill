@@ -5,7 +5,7 @@ permalink: /menu/
 ---
 <div itemtype="http://schema.org/Restaurant" itemscope="">
 	<header class="branding center background-accent color-alt">
-		{% include icon.html icon='logo' class='logo current-color' itemprop='image' %}
+		{% include icon.html icon=site.logo class='logo current-color' itemprop='image' %}
 		<h1 itemprop="name">{{ site.data.publisher.name }}</h1>
 		<figure itemprop="image" itemtype="http://schema.org/ImageObject" itemscope="">
 			<img alt="image" class="logo current-color" src="{{ site.data.publisher.image.url | absolute_url }}" itemprop="url" />
@@ -20,28 +20,7 @@ permalink: /menu/
 	{% include address.html address=site.data.publisher.address %}
 	<div itemprop="menu" itemtype="http://schema.org/Menu" itemscope="">
 		{% for data in site.data.menu.order %}{% assign section=site.data.menu[data] %}
-		<section id="{{ section.name | slugify }}" class="menu-section" itemprop="hasMenuSection" itemtype="http://schema.org/MenuSection" itemscope="">
-			<h2 class="font-title center color-alt background-accent sticky top" itemprop="name">{{ section.name }}</h2>
-			<figure class="center" itemprop="image" itemtype="http://schema.org/ImageObject" itemscope="">
-				{% include imgur.html url=section.image itemprop='url' %}
-				<figcaption itemprop="caption">{{ section.description }}</figcaption>
-			</figure>
-			<ul>
-				{% for item in section.menu %}
-					<li class="card shadow" itemprop="hasMenuItem" itemtype="http://schema.org/MenuItem" itemscope="">
-						<h3 itemprop="name">{{ item.name }}</h3>
-						<div>
-							<span itemprop="description">{{ item.description }}</span>
-							<br />
-							<div itemprop="offers" itemtype="http://schema.org/Offer" itemscope="">
-								<b itemprop="price">{{ item.price }}</b>
-								<meta itemprop="priceCurrency" content="{{ item.priceCurreny | default: 'USD' }}" />
-							</div>
-						</div>
-					</li>
-				{% endfor %}
-			</ul>
-		</section>
+		{% include menu-section.html menusection=section %}
 		{% endfor %}
 	</div>
 </div>

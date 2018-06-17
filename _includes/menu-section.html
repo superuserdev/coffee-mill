@@ -1,0 +1,10 @@
+<section id="{{ include.menusection.name | slugify }}" class="menu-section" itemprop="hasMenuSection" itemtype="http://schema.org/MenuSection" itemscope="">
+	<h2 class="font-title center color-alt background-accent sticky top" itemprop="name">{{ include.menusection.name }}</h2>
+	<figure class="center" itemprop="image" itemtype="http://schema.org/ImageObject" itemscope="">
+		{% include imgur.html url=include.menusection.image itemprop='url' %}
+		<figcaption itemprop="caption">{{ include.menusection.description }}</figcaption>
+	</figure>
+	<div>
+		{% for item in include.menusection.menu %}{% include menu-item.html menuitem=item %}{% endfor %}
+	</div>
+</section>

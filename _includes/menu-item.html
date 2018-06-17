@@ -1,0 +1,11 @@
+<div class="{{ include.class | default: 'card shadow' }}" itemprop="hasMenuItem" itemtype="http://schema.org/MenuItem" itemscope="">
+	<h3 itemprop="name">{{ include.menuitem.name }}</h3>
+	<div>
+		<span itemprop="description">{{ include.menuitem.description }}</span>
+		<br />
+		<div itemprop="offers" itemtype="http://schema.org/Offer" itemscope="">
+			<b itemprop="price">{{ include.menuitem.price }}</b>
+			<meta itemprop="priceCurrency" content="{{ include.menuitem.priceCurreny | default: 'USD' }}" />
+		</div>
+	</div>
+</div>
