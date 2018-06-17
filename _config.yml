@@ -134,10 +134,6 @@ defaults:
     permalink: /posts/:categories/:year/:month/:day/:title/
     comments: false
     ads: false
-collections:
-  menu:
-    output: true
-    permalink: /:collection/:name/
 plugins:
 - jekyll-watch
 - jekyll-paginate

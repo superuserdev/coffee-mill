@@ -1,0 +1,10 @@
+name: Coffee
+description: Get your caffeine
+image: 'https://imgur.com/vjWmZWp'
+menu:
+  - name: Regular
+    description: Regular ol coffee
+    price: 1.99
+  - name: Other
+    description: Not sure how, but this one is different
+    price: 2.15

@@ -1,8 +1,8 @@
-'@type': Organization
+'@type': Restaurant
 '@context': 'http://schema.org'
 name: The Coffee Mill Cafe
 telephone: '+1-760-379-0002'
-url: 'https://www.thecoffeecafe.com/'
+url: 'https://www.thecoffeecafe.com'
 address:
   '@type': PostalAddress
   streetAddress: 36 Highway 155
@@ -15,9 +15,20 @@ sameAs:
 #  twitter:
 #  linkedin:
   facebook: The-Coffee-Mill-Cafe-104517223240056
+servesCuisine:
+  - Coffee
+  - Breakfast
+  - Sandwiches
+  - Salads
 logo:
   '@type': ImageObject
-  url: 'https://kernvalley.us/img/icon-512.png'
+  url: '/img/favicon.svg'
   width: 512
   height: 512
   encodingFormat: png
+image:
+  '@type': ImageObject
+  url: 'https://i.imgur.com/YHD0AVA.jpg'
+  width: 960
+  height: 721
+  encodingFormat: JPEG

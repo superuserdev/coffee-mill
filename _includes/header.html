@@ -1,7 +1,9 @@
-<header id="header" class="font-title center background-fixed background-no-repeat overflow-hidden background-cover color-alt optimize-speed transition-speed-slow" role="banner">
+<header id="header" class="font-title center background-fixed background-no-repeat overflow-hidden background-cover color-alt relative" role="banner">
 	<h1 class="center filter-shadow-dark">
 		{% include icon.html icon='logo' class='current-color logo' %}
 		<hr />
 		<span class="font-title">{{ site.title }}</span>
 	</h1>
+	<a href="{{'/menu/' | absolute_url }}" class="absolute top left" role="button">Menu</a>
+	<span class="absolute top right" role="button">{% include telephone.html telephone=site.data.publisher.telephone %}</span>
 </header>

@@ -1,0 +1,7 @@
+name: Breakfast
+description: Here is  our Breakfast menu
+image: 'https://imgur.com/vUZMbRl'
+menu:
+  - name: Breakfast Burrito
+    description: A large flour tortilla filled with scrambled eggs, potatoes, shredded cheese and choice of sausage, bacon, ham or vegetarian. Served with salsa.
+    price: 6.25
