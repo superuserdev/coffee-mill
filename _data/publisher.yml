@@ -20,6 +20,7 @@ servesCuisine:
   - Breakfast
   - Sandwiches
   - Salads
+openingHours: 'mo-fr 06:00-15:00, sa 07:00-14:00'
 logo:
   '@type': ImageObject
   url: '/img/favicon.svg'

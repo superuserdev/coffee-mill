@@ -13,6 +13,7 @@ permalink: /menu/
 	</header>
 	{% for cuisine in site.data.publisher.servesCuisine %}<meta itemprop="servesCuisine" content="{{ cuisine }}" />{% endfor %}
 	<meta itemprop="priceRange" content="{{ site.data.publisher.priceRange | default: '$$' }}" />
+	<meta itemprop="openingHours" content="{{ site.data.publisher.openingHours }}" />
 	<div>
 		<span role="button">{% include telephone.html telephone=site.data.publisher.telephone %}</span>
 		<span role="button">{% include url.html url=site.data.publisher.url %}</span>
