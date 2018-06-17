@@ -2,7 +2,7 @@
 '@context': 'http://schema.org'
 name: The Coffee Mill Cafe
 telephone: '+1-760-379-0002'
-url: 'https://www.thecoffeecafe.com'
+url: 'https://compassionate-engelbart-d0e039.netlify.com'
 address:
   '@type': PostalAddress
   streetAddress: 36 Highway 155
