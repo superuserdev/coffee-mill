@@ -1,6 +1,6 @@
 author: Chris Zuber
 title: The Coffee Mill Cafe
-url: /
+# url:
 markdown: kramdown
 version: 1.0.0
 timezone: America/Los_Angeles
