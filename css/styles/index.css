@@ -9,5 +9,7 @@
 @import url("../core-css/animations.css");
 @import url("../core-css/fonts.css");
 @import url("../animate.css/animate.css");
+@import url("./icons.css");
+@import url("./dialog.css");
 @import url("./header.css");
 @import url("./footer.css");

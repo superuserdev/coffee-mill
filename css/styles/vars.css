@@ -9,6 +9,8 @@
 	--accent-color-2: #2C0D03;
 
 	--button-border: none;
+	--button-border-radius: 6px;
+	--button-padding: 0.6em;
 	--button-background: var(--accent-color);
 	--button-color: var(--alt-color);
 	--button-active-background: var(--accent-color-2);
