@@ -37,7 +37,7 @@ feed:
   url: /feed.rss
   type: application/rss+xml
 icons: '/img/icons.svg'
-theme-color: '#0031c6'
+theme-color: '#5D1C05'
 background-color: '#242424'
 # discus-identifier:
 # google-analytics:
