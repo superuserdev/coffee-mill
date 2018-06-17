@@ -33,9 +33,9 @@ keywords:
 #   title:
 #   url:
 # twitter:
-feed:
-  url: /feed.rss
-  type: application/rss+xml
+# feed:
+#   url: /feed.rss
+#   type: application/rss+xml
 icons: '/img/icons.svg'
 theme-color: '#5D1C05'
 background-color: '#242424'
@@ -113,9 +113,9 @@ appicons:
   sizes: 192x192
   type: image/png
 screenshots:
-- src: 'https://i.imgur.com/7Ag35D6l.png'
-  sizes: 640x297
-  type: image/png
+- src: 'https://i.imgur.com/Zu7oPazl.jpg'
+  sizes: 640x300
+  type: image/jpeg
 defaults:
 - scope:
     path: _posts
