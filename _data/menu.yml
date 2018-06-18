@@ -13,8 +13,39 @@
   image: 'https://imgur.com/vUZMbRl'
   menu:
     - name: Breakfast Burrito
-      image: 'https://imgur.com/vUZMbRl'
       description: |-
         A large flour tortilla filled with scrambled eggs, potatoes, shredded
         cheese and choice of sausage, bacon, ham or vegetarian. Served with salsa.
       price: 6.25
+    - name: Breakfast Muffin or Croissant
+      description: |-
+        A toasted English muffin or buttery croissant with a fresh egg, cheese
+        and choice of sausage, bacon, ham or vegetarian.
+      price: 4.75
+    - name: Morning Harvest Breakfast Bagel
+      description: |-
+        Toasted bagel with scrambled egg, Swiss cheese, ham, avocado and sprouts.
+      price: 5.75
+    - name: Hobo Spuds
+      description: |-
+        Crispy home fried potatoes topped with diced onions, bell peppers and
+        crispy diced bacon topped with cheese, sour cream and guacamole. Served
+        with salsa.
+      price: 7.25
+    - name: Coffee Mill Omlet
+      description: |-
+        Three egg omlet filled with choice of meat, cheese and veggies and toast.
+      price: 8.25
+    - name: Bacon & Eggs / Sausage & Eggs
+      description: |-
+        Two eggs with choice of meat. Served with toast.
+      price: 6.95
+    - name: Oatmeal
+      description: |-
+        A bowl of traditional oatmeal served with milk, butter and brown sugar.
+        Add fruit and walnuts for $1.50.
+      price: '3.50'
+    - name: Toasted Bagel
+      description: |-
+        Your choice of bagel slathered with cream cheese.
+      price: '3.50'
