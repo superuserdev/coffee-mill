@@ -13,3 +13,27 @@
 @import url("./dialog.css");
 @import url("./header.css");
 @import url("./footer.css");
+
+main {
+	width: 90vw;
+	margin: 2vw 5vw;
+	background-color: #E2CDBA;
+	padding: 0.8rem;
+	box-shadow: 0.3rem 0.3rem 0.4rem rgba(0,0,0,.07);
+}
+
+[itemprop="hasMenuItem"] {
+	margin-bottom: 0.4rem;
+}
+
+.menu-section {
+	padding: 1.5rem;
+}
+
+.menu-section header {
+	padding: 0.1rem;
+	font-size: 1.2rem;
+	border-radius: 0 0 1em 1em;
+	box-shadow: 0.3rem 0.3rem 0.4rem rgba(0,0,0,.07);
+
+}
