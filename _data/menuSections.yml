@@ -1,0 +1,20 @@
+- name: Coffee
+  description: Get your caffeine
+  image: 'https://imgur.com/vjWmZWp'
+  menu:
+    - name: Regular
+      description: Regular ol coffee
+      price: 1.99
+    - name: Other
+      description: Not sure how, but this one is different
+      price: 2.15
+- name: Breakfast
+  description: Here is  our Breakfast menu
+  image: 'https://imgur.com/vUZMbRl'
+  menu:
+    - name: Breakfast Burrito
+      image: 'https://imgur.com/vUZMbRl'
+      description: |-
+        A large flour tortilla filled with scrambled eggs, potatoes, shredded
+        cheese and choice of sausage, bacon, ham or vegetarian. Served with salsa.
+      price: 6.25

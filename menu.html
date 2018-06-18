@@ -20,8 +20,8 @@ permalink: /menu/
 	</div>
 	{% include address.html address=site.data.publisher.address %}
 	<div itemprop="menu" itemtype="http://schema.org/Menu" itemscope="">
-		{% for data in site.data.menu.order %}{% assign section=site.data.menu[data] %}
-		{% include menu-section.html menusection=section %}
+		{% for section in site.data.menuSections %}
+			{% include menu-section.html menusection=section %}
 		{% endfor %}
 	</div>
 </div>

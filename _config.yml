@@ -7,7 +7,7 @@ timezone: America/Los_Angeles
 lang: en
 dir: ltr
 charset: utf-8
-logo: favicon
+logo: logo
 paginate: 8
 paginate_path: "/page-:num/"
 viewport: width=device-width
