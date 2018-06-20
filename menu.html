@@ -11,18 +11,16 @@ permalink: /menu/
 			<img alt="image" class="logo current-color" src="{{ site.data.publisher.image.url | absolute_url }}" itemprop="url" />
 		</figure>
 	</header>
-	<nav id="menu-sections-nav" class="background-accent color-alt sticky top flex row">
+	<nav id="menu-sections-nav" class="sticky top flex row">
 		{% for section in site.data.menu %}
-			<a href="{{ section.name | slugify | prepend: '#' | prepend: page.url | absolute_url }}">{{ section.name }}</a>
+			<a href="{{ section.name | slugify | prepend: '#' | prepend: page.url | absolute_url }}" class="inline-block" role="button">{{ section.name }}</a>
 		{% endfor %}
 	</nav>
 	{% for cuisine in site.data.publisher.servesCuisine %}<meta itemprop="servesCuisine" content="{{ cuisine }}" />{% endfor %}
 	<meta itemprop="priceRange" content="{{ site.data.publisher.priceRange | default: '$$' }}" />
 	<meta itemprop="openingHours" content="{{ site.data.publisher.openingHours }}" />
-	<div>
-		<span role="button">{% include telephone.html telephone=site.data.publisher.telephone %}</span>
-		<span role="button">{% include url.html url=site.data.publisher.url %}</span>
-	</div>
+	<meta itemprop="telephone" content="{{ site.data.publisher.telephone }}" />
+	<meta itemprop="url" content="{{ site.data.publisher.url }}" />
 	{% include address.html address=site.data.publisher.address %}
 	<div itemprop="menu" itemtype="http://schema.org/Menu" itemscope="">
 		{% for section in site.data.menu %}
