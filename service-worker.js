@@ -1,9 +1,25 @@
-// 2017-11-02 16:19
 const config = {
-	version: '0.1.0',
+	version: 'coffee-mill',
 	caches: [
 		// Main assets
 		'/',
+		'/menu/',
+		'/js/index.min.js',
+		'/css/styles/index.min.css',
+		'/img/icons.svg',
+		'/img/favicon.svg',
+
+		// Logos
+		'/img/logos/facebook.svg',
+		'/img/logos/twitter.svg',
+		'/img/logos/linkedin.svg',
+		'/img/logos/google-plus.svg',
+		'/img/logos/reddit.svg',
+		'/img/logos/gmail.svg',
+
+		// Fonts
+		'/fonts/Alice.woff2',
+		'/fonts/roboto.woff2',
 	],
 	ignored: [
 		'/service-worker.js',
@@ -14,45 +30,41 @@ const config = {
 		'/css/',
 		'/img/',
 		'/fonts/',
+		'/posts/',
+		'/contact/',
+		'/rafting/',
+	],
+	hosts: [
+		'secure.gravatar.com',
+		'i.imgur.com',
+		'cdn.polyfill.io',
 	],
 };
 
-self.addEventListener('install', async () => {
+addEventListener('install', async () => {
 	const cache = await caches.open(config.version);
-	const keys = await caches.keys();
-	await keys.forEach(async key => {
-		if (key !== config.version) {
-			await caches.delete(key);
-		}
-	});
 	await cache.addAll(config.caches);
 	skipWaiting();
 
 });
 
-self.addEventListener('activate', event => {
+addEventListener('activate', event => {
 	event.waitUntil(async function() {
 		clients.claim();
-		const keys = await caches.keys();
-		keys.forEach(async key => {
-			if (key !== config.version) {
-				await caches.delete(key);
-			}
-		});
 	}());
 });
 
-self.addEventListener('fetch', async event => {
+addEventListener('fetch', async event => {
 	function isValid(req) {
 		try {
 			const url = new URL(req.url);
 			const isGet = req.method === 'GET';
-			const sameOrigin = url.origin === location.origin;
+			const allowedHost = config.hosts.includes(url.host);
 			const isHome = ['/', '/index.html', '/index.php'].some(path => url.pathname === path);
 			const notIgnored = config.ignored.every(path => url.pathname !== path);
 			const allowedPath = config.paths.some(path => url.pathname.startsWith(path));
 
-			return isGet && sameOrigin && (isHome || (allowedPath && notIgnored));
+			return isGet && (allowedHost || (isHome || (allowedPath && notIgnored)));
 		} catch(err) {
 			console.error(err);
 			return false;
@@ -65,7 +77,7 @@ self.addEventListener('fetch', async event => {
 
 		if (navigator.onLine) {
 			const fetched = fetch(request).then(async resp => {
-				if (resp instanceof Response) {
+				if (resp instanceof Response && resp.ok) {
 					const respClone = await resp.clone();
 					await cache.put(event.request, respClone);
 				}
@@ -84,6 +96,7 @@ self.addEventListener('fetch', async event => {
 	}
 
 	if (isValid(event.request)) {
+		// console.log(event.request.url);
 		event.respondWith(get(event.request));
 	}
 });
