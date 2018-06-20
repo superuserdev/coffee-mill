@@ -1,9 +1,19 @@
-<header id="header" class="font-title center background-fixed background-no-repeat overflow-hidden background-cover color-alt relative" role="banner">
-	<h1 class="center filter-shadow-dark">
+<header id="header" class="font-title center background-fixed background-no-repeat overflow-hidden background-cover color-alt relative" role="banner" itemtype="http://schema.org/Restaurant">
+	<h1 class="center big filter-shadow-dark">
 		{% include icon.html icon='logo' class='current-color logo' %}
 		<hr />
-		<span class="font-title">{{ site.title }}</span>
+		<span itemprop="name" class="font-title">{{ site.title }}</span>
 	</h1>
 	<a href="{{'/menu/' | absolute_url }}" class="absolute top left" role="button">Menu</a>
 	<span class="absolute top right" role="button">{% include telephone.html telephone=site.data.publisher.telephone %}</span>
+	<div class="inline-block">{% include address.html address=site.data.publisher.address %}</div><br />
+	<figure itemprop="image" itemtype="http://schema.org/ImageObject" itemscope="" hidden="">
+		{% include imgur.html url=site.data.publisher.image.url itemprop='url' %}
+	</figure>
+	<meta itemprop="image" content="{{ site.data.publisher.image.url | absolute_url }}" />
+	{% for cuisine in site.data.publisher.servesCuisine %}<meta itemprop="servesCuisine" content="{{ cuisine }}" />{% endfor %}
+	<meta itemprop="priceRange" content="{{ site.data.publisher.priceRange | default: '$$' }}" />
+	<meta itemprop="openingHours" content="{{ site.data.publisher.openingHours }}" />
+	<meta itemprop="telephone" content="{{ site.data.publisher.telephone }}" />
+	<meta itemprop="url" content="{{ site.data.publisher.url }}" />
 </header>
