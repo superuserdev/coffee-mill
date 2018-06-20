@@ -30,12 +30,28 @@ main {
 #menu-sections-nav > * {
 	flex: 1 1 auto;
 	text-align: center;
-	margin: 0 0.3rem;
+	margin: 0 0.1rem;
 	border-radius: 0 0 8px 8px;
+}
+
+#menu-sections-nav .home-link {
+	flex-grow: 0;
 }
 
 [itemprop="hasMenuItem"] {
 	margin-bottom: 0.4rem;
+}
+
+.header-btn {
+	top: 0.8rem;
+}
+
+#menu-link {
+	left: 0.8rem;
+}
+
+#phone-link {
+	right: 0.8rem;
 }
 
 .menu-section {

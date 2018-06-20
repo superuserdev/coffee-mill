@@ -2,10 +2,12 @@
 	<h1 class="center big filter-shadow-dark">
 		{% include icon.html icon='logo' class='current-color logo' %}
 		<hr />
+		{% if page.url != '/' %}<a href="{{ site.url | absolute_url }}">{% endif %}
 		<span itemprop="name" class="font-title">{{ site.title }}</span>
+		{% if page.url != '/' %}</a>{% endif %}
 	</h1>
-	<a href="{{'/menu/' | absolute_url }}" class="absolute top left" role="button">Menu</a>
-	<span class="absolute top right" role="button">{% include telephone.html telephone=site.data.publisher.telephone %}</span>
+	<a href="{{'/menu/' | absolute_url }}" id="menu-link" class="header-btn absolute" role="button">Menu</a>
+	<span id="phone-link" class=" header-btn absolute" role="button">{% include telephone.html telephone=site.data.publisher.telephone %}</span>
 	<div class="inline-block">{% include address.html address=site.data.publisher.address %}</div><br />
 	<figure itemprop="image" itemtype="http://schema.org/ImageObject" itemscope="" hidden="">
 		{% include imgur.html url=site.data.publisher.image.url itemprop='url' %}
