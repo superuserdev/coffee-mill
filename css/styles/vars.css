@@ -11,9 +11,9 @@
 	--button-border: none;
 	--button-border-radius: 6px;
 	--button-padding: 0.6em;
-	--button-background: var(--accent-color);
+	--button-background: #477819;
 	--button-color: var(--alt-color);
-	--button-active-background: var(--accent-color-2);
+	--button-active-background: #193400;
 	--button-active-color: var(--button-color);
 	--button-disabled-background: var(--button-active-background);
 	--button-disabled-color: var(--button-active-color);
