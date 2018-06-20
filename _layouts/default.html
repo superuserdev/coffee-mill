@@ -14,7 +14,7 @@
 	<body
 		id="top"
 		data-scene="{{ page.scene | default: 'lake' }}"
-		class="layout-{{ page.layout }} {{ page.body-class | default: 'border-box smooth-scroll font-main color-default background-default' }}"
+		class="layout-{{ page.layout }} {{ page.body-class | default: 'border-box smooth-scroll font-main color-default background-primary' }}"
 		contextmenu="{{ page.contextmenu | default: site.contextmenu }}"
 		{% if page.itemprop and page.itemtype %}
 			itemprop="{{ page.itemprop }}"
@@ -23,7 +23,7 @@
 		{% endif %}
 	>
 		{% include header.html %}
-		<main>{{ content }}</main>
+		<main class="card shadow">{{ content }}</main>
 		{% include footer.html %}
 		{% include share-button.html %}
 	</body>
