@@ -1,4 +1,4 @@
-'@type': Restaurant
+'@type': CafeOrCoffeeShop
 '@context': 'http://schema.org'
 name: The Coffee Mill Cafe
 telephone: '+1-760-379-0002'
