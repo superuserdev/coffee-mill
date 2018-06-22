@@ -1,0 +1,43 @@
+#menu-sections-nav {
+	margin: 0;
+	padding: 0;
+	border-radius: 0 0 0.5em 0.5em;
+	justify-content: space-around;
+}
+
+#menu-sections-nav > * {
+	flex: 1 1 auto;
+	text-align: center;
+	margin: 0 0.1rem;
+	border-radius: 0 0 8px 8px;
+}
+
+#menu-sections-nav .home-link {
+	flex-grow: 0;
+}
+
+.menu-section {
+	padding: 1.5rem;
+}
+
+.menu-section header {
+	padding: 0.1rem;
+	font-size: 1.2rem;
+	border-radius: 0 0 1em 1em;
+	box-shadow: 0.3rem 0.3rem 0.4rem rgba(0,0,0,.07);
+}
+
+.menu-item {
+	padding-left: 0;
+	margin-bottom: 0.4rem;
+}
+
+@media (max-width: 800px) {
+	.menu-item {
+		flex-wrap: wrap;
+	}
+
+	.menu-item > * {
+		flex-shrink: 0;
+	}
+}

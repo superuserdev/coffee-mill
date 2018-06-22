@@ -1,15 +1,22 @@
-<div class="{{ include.class | default: 'card shadow flex row' }}" itemprop="hasMenuItem" itemtype="http://schema.org/MenuItem" itemscope="">
-	<div>
-		<h4>
-			<span itemprop="name">{{ include.menuitem.name }}</span>
-			<span itemprop="offers" itemtype="http://schema.org/Offer" itemscope="">
-				<b itemprop="price" data-before="$">{{ include.menuitem.price }}</b>
-				<meta itemprop="priceCurrency" content="{{ include.menuitem.priceCurreny | default: 'USD' }}" />
-			</span>
-		</h4>
-		{% if include.menuitem.image %}{% include imgur.html url=include.menuitem.image sizes='10vw' %}{% endif %}
-	</div>
-	<div>
-		<blockquote itemprop="description">{{ include.menuitem.description }}</blockquote>
-	</div>
+<div class="{{ include.class | default: 'shadow flex row' }} menu-item" itemprop="hasMenuItem" itemtype="http://schema.org/MenuItem" itemscope="">
+	{% if include.menuitem.image %}
+		<figure class="inline-block" itemprop="image" itemtype="http://schema.org/ImageObject" itemscope="">
+			{% include imgur.html
+				url=include.menuitem.image
+				decoding='async'
+				sizes='(max-width: 800px) 95vw, 10vw'
+				default_size='t'
+				itemprop='url'
+				class='menuitem-image'
+			%}
+		</figure>
+	{% endif %}
+	<h4 class="inline-block">
+		<span itemprop="name">{{ include.menuitem.name }}</span>
+		<span itemprop="offers" itemtype="http://schema.org/Offer" itemscope="">
+			<b itemprop="price" data-before="$">{{ include.menuitem.price }}</b>
+			<meta itemprop="priceCurrency" content="{{ include.menuitem.priceCurreny | default: 'USD' }}" />
+		</span>
+	</h4>
+	<blockquote class="inline-block" itemprop="description">{{ include.menuitem.description }}</blockquote>
 </div>

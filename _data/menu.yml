@@ -5,9 +5,11 @@
     - name: Regular
       description: Regular ol coffee
       price: 1.99
+      image: 'https://imgur.com/vjWmZWp'
     - name: Other
       description: Not sure how, but this one is different
       price: 2.15
+      image: 'https://imgur.com/vjWmZWp'
 - name: Breakfast
   description: Here is  our Breakfast menu
   image: 'https://imgur.com/vUZMbRl'
@@ -17,21 +19,25 @@
         A large flour tortilla filled with scrambled eggs, potatoes, shredded
         cheese and choice of sausage, bacon, ham or vegetarian. Served with salsa.
       price: 6.25
+      image: 'https://imgur.com/vUZMbRl'
     - name: Breakfast Muffin or Croissant
       description: |-
         A toasted English muffin or buttery croissant with a fresh egg, cheese
         and choice of sausage, bacon, ham or vegetarian.
       price: 4.75
+      image: 'https://imgur.com/vUZMbRl'
     - name: Morning Harvest Breakfast Bagel
       description: |-
         Toasted bagel with scrambled egg, Swiss cheese, ham, avocado and sprouts.
       price: 5.75
+      image: 'https://imgur.com/vUZMbRl'
     - name: Hobo Spuds
       description: |-
         Crispy home fried potatoes topped with diced onions, bell peppers and
         crispy diced bacon topped with cheese, sour cream and guacamole. Served
         with salsa.
       price: 7.25
+      image: 'https://imgur.com/vUZMbRl'
     - name: Coffee Mill Omlet
       description: |-
         Three egg omlet filled with choice of meat, cheese and veggies and toast.
@@ -40,12 +46,15 @@
       description: |-
         Two eggs with choice of meat. Served with toast.
       price: 6.95
+      image: 'https://imgur.com/vUZMbRl'
     - name: Oatmeal
       description: |-
         A bowl of traditional oatmeal served with milk, butter and brown sugar.
         Add fruit and walnuts for $1.50.
       price: '3.50'
+      image: 'https://imgur.com/vUZMbRl'
     - name: Toasted Bagel
       description: |-
         Your choice of bagel slathered with cream cheese.
       price: '3.50'
+      image: 'https://imgur.com/vUZMbRl'

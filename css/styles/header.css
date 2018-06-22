@@ -24,3 +24,15 @@
 		background-image: var(--coffee-background-s);
 	}
 }
+
+.header-btn {
+	top: 0.8rem;
+}
+
+#menu-link {
+	left: 0.8rem;
+}
+
+#phone-link {
+	right: 0.8rem;
+}
