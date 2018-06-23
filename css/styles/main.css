@@ -3,3 +3,7 @@ main {
 	margin: 2vw 5vw;
 	padding: 0.8rem;
 }
+
+main.card {
+	background-color: #F2ECE6;
+}
