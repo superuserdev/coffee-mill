@@ -14,9 +14,11 @@
 	--button-background: #477819;
 	--button-color: var(--alt-color);
 	--button-active-background: #193400;
+	--button-active-border: var(--button-border);
 	--button-active-color: var(--button-color);
 	--button-disabled-background: var(--button-active-background);
 	--button-disabled-color: var(--button-active-color);
+	--button-disabled-border: var(--button-border);
 
 	--coffee-background-f: url("https://i.imgur.com/Zu7oPaz.jpg");
 	--coffee-background-h: url("https://i.imgur.com/Zu7oPazh.jpg");
